@@ -1,11 +1,48 @@
 h1 {
+    font-size: 3rem;
     margin: 10px;
+    text-align: center;
 }
 
-p {
+body {
+    background-color: hsl(0, 0%, 96%);
+}
+
+.reminder {
     margin: 12px;
+    text-align: center;
+    color: hsl(120, 0%, 47%);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #fileinput {
     margin: 12px;
+    font-size: 1rem;
+}
+
+button {
+    color: hsl(159, 63%, 6%);
+    background-color: rgb(169, 213, 249);
+    border: solid 1px;
+    border-radius: 4px;
+    padding: 5px 15px;
+    font-size: 1rem;
+}
+
+@media (max-width: 767px) {
+  h1 {
+    font-size: 30px;
+  }
+  .container {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
 }
